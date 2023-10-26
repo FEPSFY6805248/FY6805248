@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script> type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
     
   
   <img src="WebBanner2023.png" alt="banner" width="1200" height="300">
@@ -116,6 +117,29 @@ document.getElementById("date&time").innerHTML = d;
  </script>
 </body>
 </html>
+
+<script type=”text/javascript”>
+google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
+google.charts.setOnLoadCallback(drawChart);
+</script>
+  
+<script type=”text/javascript”>
+Function drawChart() {
+var data = google.visualization.arrayToDataTable([
+[‘Task’, ‘Hours per Day’],
+[‘Work’, 8],
+[‘Sleep’, 8],
+[‘Eat’, 2],
+[‘Study’, 4],
+[‘Exercise’, 2]
+]);
+var options = {
+title: ‘My Daily Activities’
+};
+var chart = new google.visualization.PieChart(document.getElementByID(‘chart_div’));
+chart.draw(data, options);
+}
+</script>
 
 <h3 id="References">References</h3>
     <p><pre>
