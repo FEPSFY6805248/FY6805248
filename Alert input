@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title> Alert Input Text </title> 
+</head>
+<body>
+<input type="text" id="textinput" placeholder="Enter Text">
+<button id="alertbutton">show alert</button>
+
+<script>
+    var input = document.getelementbyid("textinput");
+    var button = document.getelementbyid("alertbutton");
+  
+  function showalert() {
+    var inputtext = input.value;
+    alert("you entered:" + inputText);
+  }
+  button.addeventlistener("click",showalert);
+</script>
+</body>
+</html>
