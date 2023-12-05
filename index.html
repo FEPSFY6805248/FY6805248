@@ -89,25 +89,25 @@ classifier confidence to drop, as in Vlachos (2008).</pre>
 
 <h2> Conference Presentation: Hong Kong international airport </h2>
     <script>
-      var slideimages = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg", "slide5.jpg"];
-      var currentslide = 0;
+      var slideimages = ["slide1.jpg", "Slide2.JPG", "Slide3.JPG", "Slide4.JPG", "Slide5.JPG"];
+      var currentSlide = 0;
 
-      function showslide() {
-      document.getelementbyid('slide').src = slideimages[currentslide];
+      function showSlide() {
+      document.getElementById('slide').src = slideImages[currentslide];
       }
-      function nextslide() {
-        currentslide = (currentslide + 1) % slideimages.length;
-        showslide();
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slideImages.length;
+        showSlide();
       }
-      function prevslide() {
-        currentslide = (currentslide - 1 + slideimages.length) % slideimages.length;
-        slowslide();
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+        slowSlide();
       }
-      function ShowSlideNumber (slidenumber) {
-        currentslide = slidenumber - 1;
-        showslide();
+      function showSlideNumber (slideNumber) {
+        currentSlide = slideNumber - 1;
+        showSlide();
       }
-      showslide();
+      showSlide();
       
       
     </script>
@@ -115,15 +115,15 @@ classifier confidence to drop, as in Vlachos (2008).</pre>
 <img id="slide" src="slide1.jpg" alt="slide 1" style="width:100%; max-width:800px;">
 
 <div class="button-container">
-  <button class="button" onclick"prevslide()">Previous</button>
-  <button class="button" onclick"nextslide()">Next</button>
+  <button class="button" onclick"prevSlide()">Previous</button>
+  <button class="button" onclick"nextSlide()">Next</button>
 
 <div class="slide-number-container">
-  <button class="button" onclick="ShowSlideNumber(1)">1</button>
-  <button class="button" onclick="ShowSlideNumber(2)">2</button>
-  <button class="button" onclick="ShowSlideNumber(3)">3</button>
-  <button class="button" onclick="ShowSlideNumber(4)">4</button>
-  <button class="button" onclick="ShowSlideNumber(5)">5</button>
+  <button class="button" onclick="showSlideNumber(1)">1</button>
+  <button class="button" onclick="showSlideNumber(2)">2</button>
+  <button class="button" onclick="showSlideNumber(3)">3</button>
+  <button class="button" onclick="showSlideNumber(4)">4</button>
+  <button class="button" onclick="showSlideNumber(5)">5</button>
 </div>
 <style>
 #slide-container {
@@ -156,7 +156,5 @@ classifier confidence to drop, as in Vlachos (2008).</pre>
   margin-bottom:-50px;
 }
 </style>
-
-
 
 </html>
