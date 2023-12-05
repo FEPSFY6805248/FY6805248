@@ -103,7 +103,7 @@ classifier confidence to drop, as in Vlachos (2008).</pre>
         currentslide = (currentslide - 1 + slideimages.length) % slideimages.length;
         slowslide();
       }
-      function showslidenumber (slidenumber) {
+      function ShowSlideNumber (slidenumber) {
         currentslide = slidenumber - 1;
         showslide();
       }
@@ -114,7 +114,7 @@ classifier confidence to drop, as in Vlachos (2008).</pre>
 <div id="slide-container"> 
 <img id="slide" src="slide1.jpg" alt="slide 1" style="width:100%; max-width:800px;">
 <div class="button-container">
-  <button class="button" onclick="showslidenumber(1)">1</button>
+  <button class="button" onclick="showSlideNumber(1)">1</button>
   <button class="button" onclick="showslidenumber(2)">2</button>
   <button class="button" onclick="showslidenumber(3)">3</button>
   <button class="button" onclick="showslidenumber(4)">4</button>
