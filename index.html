@@ -112,7 +112,44 @@ classifier confidence to drop, as in Vlachos (2008).</pre>
       
     </script>
 <div id="slide-container"> 
-<!-- part 7 -->
+<img id="slide" src="slide1.jpg" alt="slide 1" style="width:100%; max-width:800px;">
+<div class="button-container">
+  <button class="button" onclick="showslidenumber(1)">1</button>
+  <button class="button" onclick="showslidenumber(2)">2</button>
+  <button class="button" onclick="showslidenumber(3)">3</button>
+  <button class="button" onclick="showslidenumber(4)">4</button>
+</div>
+<style>
+#slide-container {
+  text-align: center;
+  position: relative;
+}
+  .button-container {
+    position:absolute;
+    bottom: 0;
+    left: 50%
+    transform: translatex(-50%);
+    margin-bottom: -100px;
+  }
+.button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius:5px;
+  font-size: 16px;
+  cursor:pointer;
+  margin: 0 5px;
+}
+
+.slide-number-container {    
+  position:absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  margin-bottom:-50px;
+}
+</style>
 
 
 
