@@ -83,70 +83,36 @@ classifier confidence to drop, as in Vlachos (2008).</pre>
 <h3 id=”Analysis and discussion”>Analysis and discussion</h3>
 <ex1></ex1>
 
-<p id="date&time"></p>
-<script>
-//javascrip that display da time
-const d = new Date();
-document.getElementById("date&time").innerHTML = d;
-</script>
 
 
 
-<script type=”text/javascript”>
-google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
-google.charts.setOnLoadCallback(drawChart);
-</script>
-  
-<script type=”text/javascript”>
-  Function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      [‘Task’, ‘Hours per Day’],
-      [‘Work’, 8],
-      [‘Sleep’, 8],
-      [‘Eat’, 2],
-      [‘Study’, 4],
-      [‘Exercise’, 2]
-      ]);
-    var options = {
-    title: ‘My Daily Activities’
-    };
-    var chart = new google.visualization.PieChart(document.getElementByID(‘chart_div’));
-    chart.draw(data, options);
-  }
-</script>
-<div id=”chart_div”></div>
 
-<h3 id="References">References</h3>
-    <p><pre>
+<h2> Conference Presentation: Hong Kong international airport </h2>
+    <script>
+      var slideimages = ["slide1.jpg", "slide2,jpg", "slide3.jpg", "slide4.jpg", "slide5.jpg];
+      var currentslide = 0;
+
+      function showslide() {
+      document.getelementbyid('slide').src = slideimages[currentslide];
+      }
+      function nextslide() {
+        currentslide = (currentslide + 1) % slideimages.length;
+        showslide();
+      }
+      function prevslide() {
+        currentslide = (currentslide - 1 + slideimages.length) % slideimages.length;
+        slowslide();
+      }
+      function showslidenumber (slidenumber) {
+        currentslide = slidenumber - 1;
+        showslide();
+      }
+      showslide()
       
-    </pre></p>
-
-<script type="text/javascript">
-function drawChart() {
-var data = new google.visualization.DataTable();
-data.addColumn('number', 'Age');
-data.addColumn('number', 'Salary');
-
-data.addRows([
-[25, 40000],
-[30, 50000],
-[35, 60000],
-[40, 75000],
-[45, 80000],
-[50, 90000]
-]);
-var options = {
-title: 'Age vs. Salary',
-hAxis: { title: 'Age' },
-vAxis: { title: 'Salary' }
-};
-var chart = new google.visualization.ScatterChart(document.getElementById('chartt_div'));
-chart.draw(data, options);
-}
-</script>
-<div id=”chartt_div”></div>
-
-
+      
+    </script>
+<div id="slide-container"> 
+<!-- part 7 -->
 
 
 
